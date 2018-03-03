@@ -1,0 +1,16 @@
+
+.table-striped>tbody>tr:nth-child(even)>td, 
+.table-striped>tbody>tr:nth-child(even)>th {
+   background-color: lightgray;
+ }
+
+ .table{
+    margin-bottom: 10em;
+    -webkit-box-shadow: 2px 8px 19px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 8px 19px -1px rgba(0,0,0,0.75);
+    box-shadow: 2px 8px 19px -1px rgba(0,0,0,0.75);
+  }
+
+  .table tr:hover{
+    opacity: .8;
+  }

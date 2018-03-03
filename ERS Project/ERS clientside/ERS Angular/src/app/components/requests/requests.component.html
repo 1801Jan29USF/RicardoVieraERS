@@ -1,0 +1,42 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" />
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<button class="btn btn-primary" (click)="status=0">All</button>
+<button class="btn btn-warning" (click)="status=1">Pending</button>
+<button class="btn btn-success" (click)="status=2">Approved</button>
+<button class="btn btn-danger" (click)="status=3">Denied</button>
+<hr>
+<table class="table table-striped " >
+  <thead class="thead-dark">
+    <tr>     
+      <th scope="col">Amount</th>
+      <th scope="col">Date Submitted</th>
+      <th scope="col">Date resolved</th>
+      <th scope="col">Description</th>
+      <th scope="col">Resolver</th>
+      <th scope="col">Status</th>
+      <th scope="col">Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let request of requests| filterByStatus: status">
+      <th scope="row">{{request.amount | currency:"USD":'symbol': '1.2'}}</th>
+      <td>{{request.dOf_submitted | date:"EEEE, MMMM d, y, h:mm:ss"}}</td>
+      <td *ngIf="request.dOf_resolved!=null else a">{{request.dOf_resolved | date:"EEEE, MMMM d, y, h:mm:ss"}}</td>
+      <ng-template #a><td>Not resolved</td></ng-template>
+      <td>{{request.description}}</td>
+      <td *ngIf="request.resolver_id!=0 else b">{{request.resolver_id}}</td>
+      <ng-template #b><td>N/A</td></ng-template>
+      <td *ngIf="request.status_id==1"><span class="label label-warning">Pending</span></td>
+      <td *ngIf="request.status_id==2"><span class="label label-success">Approved</span></td>
+      <td *ngIf="request.status_id==3"><span class="label label-important">Denied</span></td>
+      <td *ngIf="request.type_id==1">LODGING</td>
+      <td *ngIf="request.type_id==2">TRAVEL</td>
+      <td *ngIf="request.type_id==3">FOOD</td>
+      <td *ngIf="request.type_id==4">OTHER</td>
+    </tr>
+  </tbody>
+</table>

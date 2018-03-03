@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <form class="new-view" (ngSubmit)="submitRequest()" #newRequestForm="ngForm">
+    <img class="mb-4" src="https://www.ers.com/assets/img/news/_fullWidthImage/ERS-logo.png" alt=" ERS logo" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Submit a request</h1>
+    <div class="form-row">
+
+      <div class="col">
+        <label for="amount">Amount:</label>
+        <div class="input-group">
+
+          <span class="input-group-addon">$</span>
+          <input type="number" id="amount" name="amount" min="1" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100"
+            class="form-control" required oninput="validity.valid||(value='');" [(ngModel)]="newRequest.amount" placeholder="Amount greater than 0">
+        </div>
+      </div>
+      <div class="col ">
+        <label>Reimbursement type:</label>
+        <select class="custom-select" id="inputGroupSelect01" name="type" required [(ngModel)]="newRequest.type_id">
+          <option value="1">LODGING</option>
+          <option value="2">TRAVEL</option>
+          <option value="3">FOOD</option>
+          <option value="4">OTHER</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <div class="form-row">
+      <div class="col form-group">
+        <label for="description">Description:</label>
+        <textarea class="form-control" name="description" rows="3" id="description" required [(ngModel)]="newRequest.description"></textarea>
+      </div>
+    </div>
+    <button class="btn btn-primary btn-lg" type="submit" [disabled]="!newRequestForm.form.valid">Submit</button>
+  </form>
+</body>
+
+</html>

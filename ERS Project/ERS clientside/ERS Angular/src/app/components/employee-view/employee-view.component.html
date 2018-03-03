@@ -1,0 +1,21 @@
+<form class="user-view">
+  <img class="mb-4" src="https://www.ers.com/assets/img/news/_fullWidthImage/ERS-logo.png" alt=" ERS logo" width="72" height="72">
+  <h1 class="h3 mb-3 font-weight-normal">What would you like to do?</h1>
+  <div class="row">
+    <div class="col ">
+      <button class="btn btn-lg btn-primary " routerLink="/newrequest">Submit new request</button>
+    </div>
+    </div>
+    <div class="col ">
+      <button class="btn btn-lg btn-primary " routerLink="/requests" *ngIf="manager.roleId!=2 else c">View history of requests</button>
+    </div>
+      <ng-template #c>
+        <div class="col ">
+          <button class="btn btn-lg btn-primary " routerLink="/requests">View history of requests</button>
+        </div>
+        <div class="col ">
+          <button class="btn btn-lg btn-primary " routerLink="/manager-requests">View pending requests</button>
+        </div>
+      </ng-template> 
+  
+</form>

@@ -1,0 +1,53 @@
+
+2018-02-23 09:46:30 TRACE UserDaoJDBC:18 - Method called to insert new ERS user.
+2018-02-23 09:46:30 TRACE UserDaoJDBC:19 - Attempting to get connection to db.
+2018-02-23 09:46:31 TRACE UserDaoJDBC:21 - Connection established with db, creating prepared statement.
+2018-02-23 09:46:32 DEBUG UserDaoJDBC:31 - This query inserted: 1row in the db.
+2018-02-23 11:43:44 TRACE UserDaoJDBC:49 - Method called to log in.
+2018-02-23 11:43:44 TRACE UserDaoJDBC:50 - Attempting to get connection to db.
+2018-02-23 11:43:45 TRACE UserDaoJDBC:52 - Connection established with db, creating prepared statement.
+2018-02-23 11:45:02 TRACE UserDaoJDBC:49 - Method called to log in.
+2018-02-23 11:45:02 TRACE UserDaoJDBC:50 - Attempting to get connection to db.
+2018-02-23 11:45:03 TRACE UserDaoJDBC:52 - Connection established with db, creating prepared statement.
+2018-02-23 11:46:14 TRACE UserDaoJDBC:49 - Method called to log in.
+2018-02-23 11:46:14 TRACE UserDaoJDBC:50 - Attempting to get connection to db.
+2018-02-23 11:46:15 TRACE UserDaoJDBC:52 - Connection established with db, creating prepared statement.
+2018-02-23 11:47:13 TRACE UserDaoJDBC:49 - Method called to log in.
+2018-02-23 11:47:13 TRACE UserDaoJDBC:50 - Attempting to get connection to db.
+2018-02-23 11:47:14 TRACE UserDaoJDBC:52 - Connection established with db, creating prepared statement.
+2018-02-23 11:47:29 TRACE UserDaoJDBC:49 - Method called to log in.
+2018-02-23 11:47:29 TRACE UserDaoJDBC:50 - Attempting to get connection to db.
+2018-02-23 11:47:30 TRACE UserDaoJDBC:52 - Connection established with db, creating prepared statement.
+2018-02-23 11:48:13 TRACE UserDaoJDBC:49 - Method called to log in.
+2018-02-23 11:48:13 TRACE UserDaoJDBC:50 - Attempting to get connection to db.
+2018-02-23 11:48:14 TRACE UserDaoJDBC:52 - Connection established with db, creating prepared statement.
+2018-02-23 11:48:21 TRACE UserDaoJDBC:49 - Method called to log in.
+2018-02-23 11:48:21 TRACE UserDaoJDBC:50 - Attempting to get connection to db.
+2018-02-23 11:48:22 TRACE UserDaoJDBC:52 - Connection established with db, creating prepared statement.
+2018-02-23 12:08:12 TRACE UserDaoJDBC:49 - Method called to log in.
+2018-02-23 12:08:12 TRACE UserDaoJDBC:50 - Attempting to get connection to db.
+2018-02-23 12:08:13 TRACE UserDaoJDBC:52 - Connection established with db, creating prepared statement.
+2018-02-23 12:08:19 TRACE UserDaoJDBC:49 - Method called to log in.
+2018-02-23 12:08:19 TRACE UserDaoJDBC:50 - Attempting to get connection to db.
+2018-02-23 12:08:21 TRACE UserDaoJDBC:52 - Connection established with db, creating prepared statement.
+2018-02-23 12:08:34 TRACE UserDaoJDBC:49 - Method called to log in.
+2018-02-23 12:08:34 TRACE UserDaoJDBC:50 - Attempting to get connection to db.
+2018-02-23 12:08:34 TRACE UserDaoJDBC:52 - Connection established with db, creating prepared statement.
+2018-02-23 21:57:39 TRACE UserDaoJDBC:19 - Method called to insert new ERS user.
+2018-02-23 21:57:39 TRACE UserDaoJDBC:20 - Attempting to get connection to db.
+2018-02-23 21:57:41 TRACE UserDaoJDBC:22 - Connection established with db, creating prepared statement.
+2018-02-23 21:57:42 DEBUG UserDaoJDBC:32 - This query inserted: 1row in the db.
+2018-02-23 21:59:57 TRACE UserDaoJDBC:19 - Method called to insert new ERS user.
+2018-02-23 21:59:57 TRACE UserDaoJDBC:20 - Attempting to get connection to db.
+2018-02-23 21:59:58 TRACE UserDaoJDBC:22 - Connection established with db, creating prepared statement.
+2018-02-23 21:59:58 DEBUG UserDaoJDBC:32 - This query inserted: 1row in the db.
+2018-02-23 22:23:51 TRACE ReimbursementDaoJDBC:21 - Method called to create a reimbursement ticket.
+2018-02-23 22:23:51 TRACE ReimbursementDaoJDBC:22 - Attempting to get connection to db.
+2018-02-23 22:23:52 TRACE ReimbursementDaoJDBC:24 - Connection established with db, creating prepared statement.
+2018-02-23 22:26:47 TRACE ReimbursementDaoJDBC:21 - Method called to create a reimbursement ticket.
+2018-02-23 22:26:47 TRACE ReimbursementDaoJDBC:22 - Attempting to get connection to db.
+2018-02-23 22:26:48 TRACE ReimbursementDaoJDBC:24 - Connection established with db, creating prepared statement.
+2018-02-23 22:28:49 TRACE ReimbursementDaoJDBC:21 - Method called to create a reimbursement ticket.
+2018-02-23 22:28:49 TRACE ReimbursementDaoJDBC:22 - Attempting to get connection to db.
+2018-02-23 22:28:50 TRACE ReimbursementDaoJDBC:24 - Connection established with db, creating prepared statement.
+2018-02-23 22:28:50 DEBUG ReimbursementDaoJDBC:34 - this query inserted: 1row in the db.

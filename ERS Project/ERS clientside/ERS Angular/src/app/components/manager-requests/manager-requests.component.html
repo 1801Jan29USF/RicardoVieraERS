@@ -1,0 +1,33 @@
+<head>
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <!-- <th scope="col">Id</th> -->
+      <th scope="col">Amount</th>
+      <th scope="col">Date Submitted</th>
+      <th scope="col">Description</th>
+      <th scope="col">Status</th>
+      <th scope="col">Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let request of requests">
+      <!-- <th scope="row">{{request.rId}}</th> -->
+      <td>{{request.amount | currency:"USD":'symbol': '1.2'}}</td>
+      <td>{{request.dOf_submitted | date:"EEEE, MMMM d, y, h:mm:ss"}}</td>
+      <td>{{request.description}}</td>
+      <td>
+        <button class="btn btn-primary" (click)="approveStatus(2,request.rId)" >Approved</button>
+        <button class="btn btn-primary" (click)="denyStatus(3,request.rId)" >Denied</button>
+      </td>
+      <td *ngIf="request.type_id==1">LODGING</td>
+      <td *ngIf="request.type_id==2">TRAVEL</td>
+      <td *ngIf="request.type_id==3">FOOD</td>
+      <td *ngIf="request.type_id==4">OTHER</td>
+    </tr>
+  </tbody>
+</table>

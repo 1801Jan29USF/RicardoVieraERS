@@ -1,0 +1,11 @@
+
+body {
+    background: -webkit-gradient(linear, left top, left bottom, from(#f8f9fa), to(darkred)) fixed;
+    font-family: 'Lustria', serif;  
+}
+
+body h1{
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 5px darkred;
+}
+        
